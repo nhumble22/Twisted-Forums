@@ -1,0 +1,806 @@
+/*TWISTED FORUM STYLE SHEET*/
+
+/*Text and General styling*/
+*,
+:before,
+:after {
+    box-sizing: border-box;
+}
+body {
+    line-height: 1.5;
+    margin: auto;
+    background-color: #e9f0f4;
+}
+h1, h2, h3, p, a, .intro p span, input, -input-placeholder, textarea {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+p, input, -input-placeholder, textarea {
+    font-size: 16px;
+}
+h4, a {
+    font-size: 13px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+/*Main Containers styling*/
+.center {
+    width: 800px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+
+
+
+header nav label, .logout-box label, .dropdown-box .intro p span, input[type="submit"],
+.add-page input[type="checkbox"] + label {
+    cursor: pointer;
+}
+.dropdown-box .intro p span {
+    transition: 0.3s;
+}
+.dropdown-box .intro p span:hover {
+    color: #f97e76;
+    font-weight: 400;
+}
+/*HEADER*/
+header {
+    background-color: #6392ad;
+}
+header .bar {
+    height: 15px;
+    background-color: #2e3641;
+}
+.logo-container div a h1 {
+    font-size: 80px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    color: #2e3641;
+}
+.logo-container {
+    overflow: hidden;
+    height: 91px;
+}
+.logo-container div:last-of-type, .logo-container img {
+    display: inline-block;
+}
+.logo-container div:last-of-type {
+    position: relative;
+    overflow: hidden;
+    transform: skewX(-60deg);
+    top: -120px;
+    left: 190px;
+}
+.logo-container div:last-of-type a h1 {
+    color: #e9f0f4;
+    position: relative;
+    left: -190px;
+    transform: skewX(60deg);
+}
+.logo-container img {
+    height: 40px;
+    position: relative;
+    top: -147px;
+}
+header nav {
+   background-color: #2e3641;
+}
+header nav a h4 {
+    color: #fff;
+    padding: 10px 0;
+}
+header nav a, header nav .dropdown-labels, .dropdown-labels li  {
+    display: inline-block;
+}
+header nav .dropdown-labels li:last-of-type {
+    margin-left: -4px;
+}
+header nav .dropdown-labels li h4{
+    padding: 10px 20px;
+    color: #f97e76;
+    transition: 0.3s;
+}
+header nav ul {
+    float: right;
+    margin-right: -20px;
+}
+header nav .dropdown-labels li h4:hover{
+    background-color: #424a54;
+    color: #fff;
+}
+.selected-button{
+    background-color: #424a54;
+}
+
+.dropdown-box{
+    background-color: #6392ad;
+    padding: 0;
+    height: 110px;
+    overflow: hidden;
+}
+.dropdown-box .intro {
+    height: 110px;
+    padding: 15px 0;
+    text-align: center;
+}
+.dropdown-box .intro h3 {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 5px;
+}
+.dropdown-box .intro p {
+    color: #fff;
+}
+.dropdown-box .intro p span {
+    color: #2e3641;
+}
+
+
+
+
+/*************************************
+*************************************/
+
+/*register and login*/
+.dropdown input {
+    background-color: #e9f0f4;
+    color: #6b6b6b;
+    width: 100%;
+    border: none;
+    padding: 5px 10px;
+}
+.dropdown {
+    height: 110px;
+    position: relative;
+    background-color: #424a54;
+}
+.dropdown ul {
+    width: 100%;
+    clear: both;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+}
+.dropdown ul li {
+    width: 25%;
+    float: left;
+    padding: 0 10px;
+}
+.dropdown li:last-of-type input {
+    background-color: #f97e76;
+    color: #fff;
+}
+.dropdown ul li:first-of-type {
+    padding-left: 20px;
+}
+.dropdown ul li:last-of-type {
+    padding-right: 20px;
+}
+.dropdown ul li h4 {
+    font-weight: 400;
+    padding: 10px 0;
+    color: #fff;
+}
+.dropdown .error {
+    color: #f97e76;
+}
+.dropdown ul li:last-of-type input {
+    font-weight: 600;
+    margin-top: 39px;
+}
+.dropdown {
+    transition: 0.5s;   
+}
+.login ul {
+    width: 75%;
+}
+.login ul li {
+    width: 33.3%;
+}
+.dropdown-box input[type="checkbox"] {
+    display: none;
+}
+.register {
+    top: -220px;
+}
+.login {
+    top: -330px;
+}
+
+#register-checkbox:checked + .register {
+    top: -110px;
+}
+#login-checkbox:checked + .login {
+    top: -220px;
+}
+
+
+/*************************************
+*************************************/
+
+nav #add-page-button, nav ul, nav ul h4, nav ul label {
+    display: inline-block;
+}
+nav #add-page-button, nav ul #logout-button {
+    padding: 10px 20px;
+    color: #f97e76;
+    transition: 0.3s;
+}
+nav ul #logout-button,
+nav #add-page-button {
+    margin-left: 10px;
+}
+#logout-button:hover,
+#add-page-button:hover{
+    background-color: #424a54;
+    color: #fff;
+}
+.wrapper {
+    padding: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    height: 0px;
+}
+.logout-box {
+    background-color: #424a54;
+    text-align: center;
+    position: relative;
+    top: -39px;
+    transition: 0.5s;
+}
+.logout-box h4, .logout-box a, .logout-box label {
+    display: inline-block;
+}
+.logout-box > h4, .logout-box > h4 + a{
+    margin-right: 20px;
+    padding: 10px 0;
+}
+.logout-box > h4 + a, .logout-box h4 + a + label h4 {
+    color: #f97e76;
+    font-weight: 400;
+    transition: 0.3s;
+}
+.logout-box h4 + a:hover,
+.logout-box h4 + a + label h4:hover  {
+    color: #fff;
+}
+#logout-checkbox {
+    display: none;
+}
+
+#logout-checkbox:checked + .wrapper{
+    height: 39px;
+}
+#logout-checkbox:checked + .wrapper .logout-box {
+    top: 0;
+}
+
+.add-page {
+    background-color: #424a54;
+    padding: 10px 20px 15px 20px;
+    overflow: hidden;
+    position: relative;
+    top: -356px;
+    transition: 0.5s;
+    margin-bottom: -202px;
+}
+.add-page h3 {
+    color: #f97e76;
+    font-size: 18px;
+    font-weight: 700;
+}
+.add-page h4 {
+    padding: 10px 0;
+}
+.add-page input, .add-page textarea {
+    background-color: #e9f0f4;
+    color: #6b6b6b;
+    width: 100%;
+    border: none;
+    padding: 5px 10px;
+}
+.add-page textarea {
+    height: 90px;
+}
+.add-page input:last-of-type {
+    width: 25%;
+    display: block;
+    margin: auto;
+    background-color: #f97e76;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    font-weight: 600;
+}
+.add-page input[type="checkbox"], label {
+    width: initial;
+    display: inline-block;
+}
+.add-page input[type="checkbox"] {
+    position: relative;
+    border: none;
+    top: 2px;
+    left: -4px;
+}
+#add-page-checkbox {
+    display: none;
+}
+
+#add-page-checkbox:checked + .wrapper{
+    height: 356px;
+}
+#add-page-checkbox:checked + .wrapper .add-page {
+    top:0;
+}
+
+.add-page .error-box {
+    text-align: center;
+}
+.add-page .error-box .error {
+    height: 29px;
+}
+
+/*************************************
+*************************************/
+
+
+.topic-list {
+    background-color: #fff;
+    min-height: 80vh;
+    position: relative;
+    margin-bottom: -202px;
+}
+.topic-list li {
+    list-style: none;
+    padding: 10px 0;
+    clear: both;
+}
+.topic-list li:not(:last-of-type) {
+    border-bottom: 1px solid #e9f0f4;
+}
+.topic-list li:first-of-type {
+    border: none;
+}
+.topic-list li:first-of-type h4{
+    display: inline-block;
+    float: left;
+}
+.topic-list li:first-of-type h4:nth-of-type(2) {
+    margin-left: 560px;
+}
+.topic-list li:first-of-type h4:last-of-type {
+    float: right;
+}
+
+.topic-list li h4 {
+    color: #aeaeae;
+}
+.topic-list li h4 span {
+    color: #2e3641;
+    font-weight: 700;
+}
+.topic-list li h3 {
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    color: #f97e76;
+    font-weight: 600;
+}
+.center-text {
+    text-align: center;
+}
+.topic-list li div h4 {
+    display: inline-block;
+    padding: 5px 0;
+}
+.topic-list li div .particulars {
+    float: right;
+    position: relative;
+    top: -29px;
+    margin-bottom: -29px;
+}
+.topic-list li div .particulars h4:last-of-type{
+    text-align: right;
+    width: 63px;
+    margin-left: 10px;
+}
+
+
+/*************************************
+*************************************/
+
+
+.post-list {
+    background-color: #fff;
+    min-height: 80vh;
+    position: relative;
+    margin-bottom: -202px;
+}
+.post-list li {
+    list-style: none;
+    padding: 10px 0;
+    clear: both;
+}
+.post-list li:not(:last-of-type) {
+    border-bottom: 1px solid #e9f0f4;
+}
+.post-list li h4 {
+    color: #aeaeae;
+}
+.post-list li h4 span {
+    color: #2e3641;
+    font-weight: 700;
+    transition: 0.3s;
+}
+.post-list li h4 a span:hover {
+    color: #f97e76;
+}
+.post-list li > h4 {
+    color: #f97e76;
+}
+.post-list .center-text {
+    color: #aeaeae;
+}
+.post-list li:first-of-type > h4 {
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    font-family: "Lato", sans-serif;
+}
+.post-list li p {
+    color: #525252;
+}
+.post-list li div h4 {
+    display: inline-block;
+    padding: 5px 0;
+}
+.post-list li .post-buttons {
+    text-align: right;
+}
+.post-list li .post-buttons label:last-of-type {
+    margin-left: 10px;
+}
+
+/*************************************
+*************************************/
+
+.reply-box > label h4 {
+    color: #f97e76;
+}
+.reply-box textarea {
+    background-color: #e9f0f4;
+    color: #6b6b6b;
+    width: 100%;
+    height: 90px;
+    border: none;
+    padding: 5px 10px;
+}
+.reply-box input[type="submit"] {
+    width: 25%;
+    display: block;
+    margin: auto;
+    background-color: #f97e76;
+    color: #fff;
+    border: none;
+    padding: 5px;
+    font-weight: 600;
+}
+.reply-box textarea, 
+.reply-box input[type="submit"] {
+    margin: 5px auto;
+}
+.reply-box input[type="checkbox"] {
+    position: relative;
+    border: none;
+    top: 2px;
+    left: -4px;
+}
+.reply-box .error-box {
+    text-align: center;
+    height: 39px;
+}
+.reply-box .error {
+    color: #f97e76;
+    transition: 0.3s;
+}
+
+
+
+/*************************************
+*************************************/
+
+
+footer {
+    height: initial;
+}
+footer .filler {
+    height: 202px;
+    z-index: -10;
+    background-color: #6392ad;
+}
+footer .wrapper {
+    height: initial;
+    background-color: #6392ad;
+}
+footer ul li {
+    width: 50%;
+    float: left;
+}
+footer ul li a{
+    display: inline-block;
+}
+footer ul li:nth-of-type(2),
+footer ul li:last-of-type {
+    text-align: right;
+}
+footer ul li:first-of-type,
+footer ul li:nth-of-type(2) {
+    padding-top: 5px;
+}
+footer ul li:first-of-type h4 {
+    color: #2e3641;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+footer ul li:nth-of-type(2) a + a  {
+    margin-left: 20px;
+}
+footer ul li:nth-of-type(3) h4,
+footer ul li:last-of-type h4{
+    padding-bottom: 5px;
+    font-size: 12px;
+    color: #2e3641;
+    font-weight: 400;
+}
+footer .bar {
+    height: 30px;
+    background-color: #2e3641;
+}
+
+
+/*************************************
+*************************************/
+
+
+input.shatter,
+textarea.shatter {
+    background-color: #fcbeba;
+    position: relative;
+    animation: shake .5s ease-in-out;
+    
+}
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  20% {
+    transform: translateX(-10px);
+    
+  }
+
+  40% {
+    transform: translateX(10px);
+  }
+
+  60% {
+    transform: translateX(-10px);
+  }
+
+  80% {
+    transform: translateX(10px);
+
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.error-box {
+    height: 39px;
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    max-width: 100%;
+    height: 90px;
+    max-height: 90px;
+}
+
+
+
+/*************************************
+*************************************/
+
+.edit-box {
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.edit-box textarea {
+    background-color: #e9f0f4;
+    color: #6b6b6b;
+    width: 100%;
+    height: 90px;
+    border: none;
+    padding: 5px 10px;
+}
+.edit-box form {
+    text-align: right;
+}
+.edit-box input[type="submit"], .topic-edit-box input[type="submit"] {
+
+    margin-right: 10px;
+    font-size: 13px;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    color: #f97e76;
+    border: none;
+    font-weight: 700;
+}
+.edit-box > label:first-of-type h4 {
+    color: #2e3641;
+    font-weight: 700;
+    padding: 10px 0;
+}
+.edit + p {
+    max-height: 1000px;
+    overflow: hidden;
+    opacity: 1;
+    transition: 0.3s cubic-bezier(0, 1.05, 0, 1);
+}
+
+.post-buttons {
+    height: 29px;
+    opacity: 1;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.edit:checked + p + .edit-box {
+    height: 158px;
+    opacity: 1;
+}
+.edit:checked + p + .edit-box + .delete + .delete-box + .post-buttons {
+    height: 0px;
+}
+
+
+
+
+
+
+input[class="edit"],input[class="delete"] {
+    display: none;
+
+}
+.delete-box {
+    height: 0px;
+    opacity: 0;
+    overflow: hidden;
+    transition: 0.3s;
+    text-align: right;
+}
+.delete-box span h4 {
+    margin-right: 10px;
+    color: #2e3641;
+    font-weight: 700;
+}
+.delete:checked + .delete-box {
+    height: 29px;
+    opacity: 1;
+}
+.delete:checked + .delete-box + .post-buttons {
+    height: 0px;
+    opacity: 0;
+}
+
+.delete-box a h4 {
+    color: #f97e76;
+    margin-right: 10px;
+}
+
+
+
+/*************************************
+*************************************/
+
+
+.topic-edit-box form > label:not(:last-of-type) h4 {
+    color: #2e3641;
+    font-weight: 700;
+    padding: 10px 0;
+}
+.topic-edit-box form > label:last-of-type h4 {
+    padding: 5px 0;
+    color: #aeaeae;
+}
+
+.topic-edit-box textarea {
+    background-color: #e9f0f4;
+    color: #6b6b6b;
+    width: 100%;
+    height: 90px;
+    border: none;
+    padding: 5px 10px;
+}
+.topic-edit-box input:first-of-type {
+    background-color: #e9f0f4;
+    color: #6b6b6b;
+    width: 100%;
+    border: none;
+    padding: 5px 10px;
+}
+.topic-edit-box form  {
+    text-align: right;
+}
+.topic-edit-box form label:first-of-type,
+.topic-edit-box form label:nth-of-type(2) {
+    width: 100%;
+    text-align: left;
+}
+.topic-edit-box {
+    height: 0px;
+    opacity: 0;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+#editTopic:checked + .topic-edit-box{ 
+    height: 226px;
+    opacity: 1;
+}
+#editTopic:checked + .topic-edit-box + #deleteTopic + .delete-topic-box + .post-buttons {
+    height: 0;
+    opacity: 0;
+}
+
+input[id="editTopic"],input[id="deleteTopic"] {
+    display: none;
+}
+
+.delete-topic-box {
+    height: 0px;
+    opacity: 0;
+    overflow: hidden;
+    transition: 0.3s;
+    text-align: right;
+}
+.delete-topic-box span h4 {
+    margin-right: 10px;
+    color: #2e3641;
+    font-weight: 700;
+}
+#deleteTopic:checked + .delete-topic-box {
+    height: 29px;
+    opacity: 1;
+}
+#deleteTopic:checked + .delete-topic-box + .post-buttons {
+    height: 0px;
+    opacity: 0;
+}
+
+.delete-topic-box a h4 {
+    color: #f97e76;
+    margin-right: 10px;
+}
+
+
+
+.post-buttons label,
+.delete-box label,
+.edit-box form label,
+.topic-edit-box form label:last-of-type,
+.delete-topic-box label
+ {
+    cursor: pointer;
+}
